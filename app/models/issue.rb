@@ -1,6 +1,6 @@
 class Issue < ApplicationRecord
   belongs_to :project
-  STATUSES = ['New', 'In Progress', 'Closed']
+  STATUSES = ['New', 'In Progress', 'Closed'].freeze
 
   validates :title, :status, :priority, presence: true
   validates :status, inclusion: { in: STATUSES }
