@@ -1,22 +1,16 @@
-<div id="<%= dom_id issue %>">
-  <p>
-    <strong>Title:</strong>
-    <%= issue.title %>
-  </p>
+<div id="<%= dom_id issue %>" class="issue-details-card">
+  <p><strong>Title:</strong> <span class="value"><%= issue.title %></span></p>
+  <p><strong>Status:</strong> <span class="status <%= "status-#{issue.status.parameterize}" %>"><%= issue.status %></span></p>
+  <p><strong>Priority:</strong> <span class="value"><%= issue.priority %></span></p>
+  <p><strong>Project:</strong> <span class="value">#<%= issue.project_id %></span></p>
+  <%= link_to "Show ", project_issue_path(@project, issue) %>
 
-  <p>
-    <strong>Status:</strong>
-    <%= issue.status %>
-  </p>
 
-  <p>
-    <strong>Priority:</strong>
-    <%= issue.priority %>
-  </p>
+  <%= link_to "Edit ", edit_project_issue_path(issue.project, issue) %>
 
-  <p>
-    <strong>Project:</strong>
-    <%= issue.project_id %>
-  </p>
-
+   <% if controller.action_name == "show" %>
+    <%= link_to "Project Issues", project_issues_path(issue.project)%>
+  <% end %>
+  
+  <%= button_to "Delete", project_issue_path(issue.project, issue), method: :delete, data: { confirm: "Are you sure?" }%>
 </div>
