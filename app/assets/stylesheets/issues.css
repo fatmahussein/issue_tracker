@@ -1,0 +1,68 @@
+.issue-details-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.issue-details-card p {
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+.issue-details-card a{
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #004085;
+}
+.issue-details-card .value {
+  color: #333;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-new {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-closed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.issue-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.issues-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: auto;
+    width: 91%;
+}
