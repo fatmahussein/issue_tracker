@@ -8,8 +8,8 @@ class IssuesController < ApplicationController
   end
 
   def show
-  @project = Project.find(params[:project_id])
-  @issue = @project.issues.find(params[:id])
+    @project = Project.find(params[:project_id])
+    @issue = @project.issues.find(params[:id])
   end
 
   def new
@@ -26,8 +26,8 @@ class IssuesController < ApplicationController
   end
 
   def edit
-  @project = Project.find(params[:project_id])
-  @issue = @project.issues.find(params[:id])
+    @project = Project.find(params[:project_id])
+    @issue = @project.issues.find(params[:id])
   end
 
   def update
