@@ -13,14 +13,15 @@
   font-size: 1rem;
 }
 
-.issue-details-card a{
-    padding: 6px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #004085;
+.issue-details-card a {
+  padding: 6px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #004085;
 }
+
 .issue-details-card .value {
   color: #333;
   margin-left: 6px;
@@ -56,13 +57,13 @@
   align-items: center;
 }
 
-.issues-list{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: auto;
-    width: 91%;
+.issues-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
+  width: 91%;
 }

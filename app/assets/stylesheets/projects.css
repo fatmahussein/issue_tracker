@@ -1,31 +1,33 @@
-.projects{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 70%;
-    margin: auto;
+.projects {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
 }
+
 .project-card {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 20px;
   background-color: #f9f9f9;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   font-family: Noto Sans;
 }
 
-.project-card .action-btn{
-    padding: 6px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #004085;
+.project-card .action-btn {
+  padding: 6px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #004085;
 }
+
 .project-title {
   font-size: 24px;
   font-weight: bold;
@@ -71,27 +73,27 @@
 }
 
 .status-new {
-  background-color: #3498db; 
+  background-color: #3498db;
 }
 
 .status-in-progress {
-  background-color: #f39c12; 
+  background-color: #f39c12;
 }
 
 .status-closed {
-  background-color: #27ae60; 
+  background-color: #27ae60;
 }
 
-.add{
-    padding: 14px;
-    background-color: rgb(41, 44, 241);
-    text-decoration: none;
-    font-family: Noto Sans;
-    border-radius: 10px;
-    color: white;
-    }
+.add {
+  padding: 14px;
+  background-color: rgb(41, 44, 241);
+  text-decoration: none;
+  font-family: Noto Sans;
+  border-radius: 10px;
+  color: white;
+}
 
-  .issue-link {
+.issue-link {
   display: flex;
   justify-content: space-between;
   width: 100%;
