@@ -1,4 +1,7 @@
 <% content_for :title, "New issue" %>
+<div>
+  <%= link_to "Back to issues", project_issues_path(@project), class: "add" %>
+</div>
 
 <h1>New issue</h1>
 
@@ -6,6 +9,3 @@
 
 <br>
 
-<div>
-  <%= link_to "Back to issues", project_issues_path(@project) %>
-</div>
