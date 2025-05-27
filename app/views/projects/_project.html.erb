@@ -1,12 +1,40 @@
-<div id="<%= dom_id project %>">
-  <p>
-    <strong>Title:</strong>
-    <%= project.title %>
-  </p>
+<div id="<%= dom_id project %>" class="project-card">
 
-  <p>
-    <strong>Description:</strong>
-    <%= project.description %>
-  </p>
+  <div class="project-title"><%= project.title %></div>
+  <div class="project-description"><%= project.description %></div>
 
+  <h4>Issues:</h4>
+  <% if project.issues.any? %>
+    <ul class="issues-data">
+      <% project.issues.each do |issue| %>
+        <% status_class = case issue.status
+          when 'New' then 'status-new'
+          when 'In Progress' then 'status-in-progress'
+          when 'Closed' then 'status-closed'
+          else ''
+          end %>
+      <li class="issue-item">
+      <%= link_to project_issue_path(project, issue), class: "issue-link" do %>
+      <span class="issue-title"><%= issue.title %></span>
+      <span class="issue-status <%= status_class %>"><%= issue.status %></span>
+      <% end %>
+     </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No issues found for this project.</p>
+  <% end %>
+  <p>
+   <% if controller.action_name != "show" %>
+  <%= link_to "Show", project , class: "action-btn"%> 
+  |
+  <% end %>
+  <%= link_to "New issue", new_project_issue_path(project), class: "action-btn" %> 
+
+   <% if controller.action_name == "show" %>
+  <%= link_to "Edit project", edit_project_path(@project), class: "action-btn" %> |
+  <%= link_to "other projects", projects_path , class: "action-btn"%>
+</p>
+  <%= button_to "Delete", @project, method: :delete %>
+<% end %>
 </div>
