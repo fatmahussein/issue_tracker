@@ -19,7 +19,7 @@ class IssuesController < ApplicationController
   def create
     @issue = @project.issues.build(issue_params)
     if @issue.save
-      redirect_to root_path, notice: "issue was successfully created."
+      redirect_to root_path, notice: 'issue was successfully created.'
     else
       render :new
     end
@@ -32,7 +32,7 @@ class IssuesController < ApplicationController
 
   def update
     if @issue.update(issue_params)
-       redirect_to root_path, notice: 'Issue updated successfully.'
+      redirect_to root_path, notice: 'Issue updated successfully.'
     else
       render :edit
     end
@@ -40,7 +40,7 @@ class IssuesController < ApplicationController
 
   def destroy
     @issue.destroy
-     redirect_to root_path, notice: 'Issue deleted successfully.'
+    redirect_to root_path, notice: 'Issue deleted successfully.'
   end
 
   private
