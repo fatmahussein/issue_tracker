@@ -5,12 +5,13 @@
 <h1>Issues</h1>
 
 <div id="issues">
-  <% @issues.each do |issue| %>
-    <%= render issue %>
-    <p>
-      <%= link_to "Show this issue", issue %>
-    </p>
-  <% end %>
+<% @issues.each do |issue| %>
+  <%= render issue %>
+  <p>
+    <%= link_to "Show this issue", project_issue_path(@project, issue) %>
+  </p>
+<% end %>
+
 </div>
 
 <%= link_to "New issue", new_project_issue_path(@project) %>
