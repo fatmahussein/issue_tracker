@@ -1,34 +1,29 @@
-<%= form_with(model: issue) do |form| %>
+<%= form_with(model: [@project, issue]) do |form| %>
   <% if issue.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
 
       <ul>
-        <% issue.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+        <% issue.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label :title %><br>
     <%= form.text_field :title %>
   </div>
 
   <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.text_field :status %>
+    <%= form.label :status %><br>
+    <%= form.select :status, Issue::STATUSES %>
   </div>
 
   <div>
-    <%= form.label :priority, style: "display: block" %>
-    <%= form.number_field :priority %>
-  </div>
-
-  <div>
-    <%= form.label :project_id, style: "display: block" %>
-    <%= form.text_field :project_id %>
+    <%= form.label :priority %><br>
+    <%= form.number_field :priority, in: 1..5 %>
   </div>
 
   <div>
