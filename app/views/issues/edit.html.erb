@@ -4,9 +4,3 @@
 
 <%= render "form", issue: @issue, project: @project %>
 
-<br>
-
-<div>
-  <%= link_to "Show this issue", project_issue_path(@project, @issue) %> |
-  <%= link_to "Back to issues", project_issues_path(@project) %>
-</div>
