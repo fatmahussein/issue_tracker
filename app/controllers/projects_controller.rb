@@ -23,7 +23,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to root_path, notice: "Project was successfully created." }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -36,7 +36,7 @@ class ProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Project was successfully updated.' }
         format.json { render :show, status: :ok, location: @project }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -50,7 +50,7 @@ class ProjectsController < ApplicationController
     @project.destroy!
 
     respond_to do |format|
-      format.html { redirect_to projects_path, status: :see_other, notice: 'Project was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -59,11 +59,11 @@ class ProjectsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_project
-    @project = Project.find(params.expect(:id))
+    @project = Project.find(params[:id]) 
   end
 
   # Only allow a list of trusted parameters through.
   def project_params
-    params.expect(project: %i[title description])
+    params.require(:project).permit(:title, :description) 
   end
 end
