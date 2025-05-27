@@ -23,6 +23,21 @@
   </head>
 
   <body>
+  <nav>
+  <div class="navbar">
+    <%= link_to 'Projects', projects_path %>
+    <%= link_to 'Graph Report', reports_path %>
+    <%= link_to 'Export', exports_path %>
+    </div>
+  </nav>
+
+  <div class="container">
+    <% if notice %>
+      <p style="color: green;"><%= notice %></p>
+    <% end %>
+
     <%= yield %>
+  </div>
+  
   </body>
 </html>
