@@ -30,5 +30,5 @@ class ExportsController < ApplicationController
                   disposition: 'inline'
       end
     end
-  end
+       # rubocop:enable Metrics/MethodLength
 end
