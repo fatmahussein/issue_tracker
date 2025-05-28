@@ -151,3 +151,8 @@ form.button_to {
   background-color: transparent;
   border: none;
 }
+
+.chart {
+  padding: 10px 20px;
+  margin: 10px 120px;
+}
