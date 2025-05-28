@@ -64,8 +64,8 @@ end
 
 gem 'rubocop', '~> 1.75'
 
-gem "chartkick", "~> 5.1"
+gem 'chartkick', '~> 5.1'
 
-gem "faker", "~> 3.5"
+gem 'faker', '~> 3.5'
 
-gem "groupdate", "~> 6.6"
+gem 'groupdate', '~> 6.6'
