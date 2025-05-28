@@ -1,4 +1,5 @@
 class ExportsController < ApplicationController
+   # rubocop:disable Metrics/MethodLength
   def index
     @issues = Issue.includes(:project)
 
