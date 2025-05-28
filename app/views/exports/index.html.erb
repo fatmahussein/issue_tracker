@@ -1,2 +1,9 @@
-<h1>Exports#index</h1>
-<p>Find me in app/views/exports/index.html.erb</p>
+<div class="downloads">
+<h1>Export Report</h1>
+<p>Export the issue list as:</p>
+
+<ul>
+  <li><%= link_to "Download Excel (.xlsx)", exports_path(format: :xlsx) %></li>
+  <li><%= link_to "Download PDF", exports_path(format: :pdf) %></li>
+</ul>
+</div>
