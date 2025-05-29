@@ -48,8 +48,8 @@ group :development, :test do
   gem 'brakeman', require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
+  gem 'rspec-rails'
   gem 'rubocop-rails-omakase', require: false
-   gem 'rspec-rails'
 end
 
 group :development do
@@ -74,4 +74,3 @@ gem 'groupdate', '~> 6.6'
 gem 'axlsx_rails'
 gem 'prawn', '~> 2.5'
 gem 'prawn-table', '~> 0.2.2'
-
