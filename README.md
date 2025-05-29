@@ -29,6 +29,10 @@
 
 **Issue Tracker** is a Rails app for tracking issues (or tasks), displaying a graphical report, and allowing users to download reports in Excel and PDF formats. 
 
+
+[Live demo](https://issue-tracker-ckoz.onrender.com/)
+
+
 <img width="470" alt="issues" src="https://github.com/user-attachments/assets/1532545b-2ad8-49fb-b61a-8ce3482d6dfb" />
 <img width="808" alt="issues per project" src="https://github.com/user-attachments/assets/226f99ad-01c2-4982-bd09-676b3b9cd167" />
 
