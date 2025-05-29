@@ -35,6 +35,8 @@
 
 <img width="470" alt="issues" src="https://github.com/user-attachments/assets/1532545b-2ad8-49fb-b61a-8ce3482d6dfb" />
 <img width="808" alt="issues per project" src="https://github.com/user-attachments/assets/226f99ad-01c2-4982-bd09-676b3b9cd167" />
+<img width="479" alt="report" src="https://github.com/user-attachments/assets/08e5f727-f3ad-4fe8-af66-81fda428cc3c" />
+
 
 
 
