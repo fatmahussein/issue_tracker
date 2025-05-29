@@ -27,7 +27,7 @@
 
 # Issue Tracker <a name="issue-tracker"></a>
 
-**Issue Tracker** This is a Rails app for tracking issues (or tasks), displaying a graphical report, and allowing users to download reports in Excel and PDF formats. 
+**Issue Tracker** is a Rails app for tracking issues (or tasks), displaying a graphical report, and allowing users to download reports in Excel and PDF formats. 
 
 [Live Demo]()
 
@@ -115,9 +115,9 @@ Visit `http://localhost:3000/exports` to download issues as PDF or Excel.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Filtering issues by status or priority
--Adding due dates and assignment to users
--Graphical dashboard of issue trends
+- Filtering issues by status or priority
+- Adding due dates and assignment to users
+- Graphical dashboard of issue trends
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
