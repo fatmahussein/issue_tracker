@@ -69,7 +69,7 @@ gem 'chartkick', '~> 5.1'
 
 gem 'faker', '~> 3.5'
 
-gem 'groupdate', '~> 6.6'
+gem 'groupdate', '~> 6.7'
 
 gem 'axlsx_rails'
 gem 'prawn', '~> 2.5'
