@@ -63,7 +63,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'rubocop', '~> 1.75'
+gem 'rubocop', '~> 1.81'
 
 gem 'chartkick', '~> 5.1'
 
